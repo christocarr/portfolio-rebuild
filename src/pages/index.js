@@ -6,8 +6,9 @@ import Layout from '../components/layout'
 const Index = () => {
   return (
     <Layout>
-      <h2>Index Page</h2>
-      <p>Hire me! <Link to="contact">Contact me.</Link></p>
+      <h2>Welcome!</h2>
+      <h3>I'm Chris, a web developer living in London</h3>
+      <p>Need me to build your next website or app? <Link to="contact">Contact me.</Link></p>
     </Layout>
 
   )

@@ -11,6 +11,7 @@ const Blog = () => {
       allMarkdownRemark {
         edges {
           node {
+            excerpt
             frontmatter {
               title
               date
@@ -32,6 +33,7 @@ const Blog = () => {
             <li className={blogStyles.post}>
               <h3>{edge.node.frontmatter.title}</h3>
               <p className={blogStyles.date}>{edge.node.frontmatter.date}</p>
+              <p>{edge.node.excerpt}</p>
               <Link to={`/blog/${edge.node.fields.slug}`}>read more</Link>
             </li>
           )

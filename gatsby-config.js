@@ -13,6 +13,7 @@ module.exports = {
     author: 'Christopher Carr'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-source-filesystem',

@@ -26,27 +26,6 @@ const Blog = () => {
     }
   `)
 
-  const contentfulData = useStaticQuery(graphql`
-    query {
-      allContentfulContentfulPostExample (
-        sort: {
-          fields: publishedDate
-          order: DESC
-        }
-      ) {
-        edges{
-          node {
-            title
-            slug
-            publishedDate (
-              formatString: "DD MMMM YYYY"
-            )
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <Layout>
       <Head />
@@ -62,19 +41,6 @@ const Blog = () => {
           )
         })}
       </ol>
-      <ol className={blogStyles.posts}>
-        {contentfulData.allContentfulContentfulPostExample.edges.map((edge) => {
-          return (
-            <li className={blogStyles.post}>
-              <h3>{edge.node.title}</h3>
-              <p className={blogStyles.data}>
-                {edge.node.publishedDate}
-              </p>
-            </li>
-          )
-        })}
-      </ol>
-      
     </Layout>
   )
 }

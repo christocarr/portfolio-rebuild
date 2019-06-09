@@ -27,13 +27,6 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          {
-            resolve: 'gatsby-source-contentful',
-            options: {
-              spaceId: process.env.CONTENTFUL_SPACE_ID,
-              accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
-            }
-          },
           'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-images',

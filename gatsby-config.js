@@ -22,6 +22,12 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `blog-cffsqoruvg`
+      }
+    },
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',

@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Disqus from 'gatsby-plugin-disqus'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
@@ -24,6 +25,11 @@ const Post = (props) => {
       <p>{props.data.markdownRemark.frontmatter.date}</p>
       <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
       </div>
+      <Disqus
+        // identifier={post.id}
+        // title={post.title}
+        // url={`${config.siteUrl}${location.pathname}`}
+      />
     </Layout>
   )
 }

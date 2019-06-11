@@ -8,6 +8,7 @@ import Head from '../components/head'
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: {slug: { eq: $slug } }) {
+      id
       frontmatter {
         title
         date
@@ -26,9 +27,8 @@ const Post = (props) => {
       <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
       </div>
       <Disqus
-        // identifier={post.id}
-        // title={post.title}
-        // url={`${config.siteUrl}${location.pathname}`}
+        identifier={props.data.markdownRemark.id}
+        title={props.data.markdownRemark.frontmatter.title}
       />
     </Layout>
   )

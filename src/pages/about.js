@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Layout>
       <Head title="About" />
-      <h2>About<h2>
+      <h2>About</h2>
       <h3>The Short</h3>
       A web designer and developer working in London, UK. I specialize in frontend developent. 
       <h3>The Long</h3>

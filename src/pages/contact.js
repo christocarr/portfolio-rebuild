@@ -8,6 +8,7 @@ const Contact = () => {
     <Layout>
       <Head title="Contact "/>
       <h2>Contact Page</h2>
+      <p>What is a website without a contact form?</p>
       <p>Reach out to me on twitter<a href="https://twitter.com/ChrisofCarr">@ChrisofCarr</a></p>
     </Layout>
   )

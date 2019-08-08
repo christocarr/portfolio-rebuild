@@ -1,5 +1,4 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
 
 import gatsbyLogo from '../images/Gatsby-Monogram.svg'
 import netlifyLogo from '../images/netlify-logomark.svg'

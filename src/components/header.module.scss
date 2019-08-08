@@ -9,9 +9,17 @@
 }
 
 .nav-list {
+  height: 3rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   list-style-type: none;
+  background-color: #f7f7f7;
+  
+  li {
+    margin-bottom: 0;
+  }
 }
 
 .nav-item {

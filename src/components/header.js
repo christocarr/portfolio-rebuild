@@ -21,7 +21,7 @@ const Header = () => {
         <Link to="/" className={headerStyles.title}>Christopher Carr</Link>
       </h1>
       <p>{data.site.siteMetadata.title}</p>
-      <ul className={headerStyles.navList}>
+      <nav className={headerStyles.navList}>
         <li>
           <Link to="about" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
             About
@@ -44,7 +44,7 @@ const Header = () => {
             Blog
           </Link>
         </li>
-      </ul>
+      </nav>
     </header>
   )
 }

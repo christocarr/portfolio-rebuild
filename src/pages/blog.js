@@ -30,6 +30,7 @@ const Blog = () => {
   return (
     <Layout>
       <Head />
+      <h2>Blog</h2>
       <ol className={blogStyles.posts}>
         {data.allMarkdownRemark.edges.map((edge) => {
           return (

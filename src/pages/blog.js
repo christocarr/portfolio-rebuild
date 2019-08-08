@@ -17,6 +17,7 @@ const Blog = () => {
               title
               date
             }
+            id
             fields {
               slug
             }
@@ -32,7 +33,7 @@ const Blog = () => {
       <ol className={blogStyles.posts}>
         {data.allMarkdownRemark.edges.map((edge) => {
           return (
-            <li className={blogStyles.post}>
+            <li key={edge.node.id} className={blogStyles.post}>
               <h3>{edge.node.frontmatter.title}</h3>
               <p className={blogStyles.date}>{edge.node.frontmatter.date}</p>
               <p>{edge.node.excerpt}</p>

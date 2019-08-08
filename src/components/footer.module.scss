@@ -1,3 +1,15 @@
 .footer {
   margin: 3em 0 0 0;
 }
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0 0.4em 0 0.4em;
+}

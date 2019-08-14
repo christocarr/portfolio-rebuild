@@ -40,7 +40,7 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to="blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
+          <Link to="./blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
             Blog
           </Link>
         </li>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
@@ -17,7 +16,6 @@ const About = () => {
       not looked back.</p>
       <p>Right now I develop with React and the JAMStack(a fullstack of sorts) and in the long term, if not already, I plan to become a fullstack developer. I'm open minded to
       learning new tech to keep myself open to job opportunities.</p>
-      <p>Please <Link to="contact">contact me</Link></p>
     </Layout>
 
   )

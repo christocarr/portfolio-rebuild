@@ -7,8 +7,8 @@ const Projects = () => {
   return (
     <Layout>
       <Head title="Projects" />
-      <h2>Projects Page</h2>
-      <p>This is the projects page</p>
+      <h2>Projects</h2>
+      <p>Future projects will appear here.</p>
     </Layout>
   )
 }

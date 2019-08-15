@@ -9,13 +9,14 @@ const Head = ({ title }) => {
       site {
         siteMetadata {
           title
+          author
         }
       }
     }
   `)
 
   return (
-    <Helmet title={ `${title} | ${data.site.siteMetadata.title}` } />
+    <Helmet title={ `${title} | ${data.site.siteMetadata.author}` } />
   )
 }
 

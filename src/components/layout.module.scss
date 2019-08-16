@@ -3,8 +3,18 @@
   flex-direction: column;
   max-width: 750px;
   min-height: 100vh;
+  margin: auto;
 }
 
 .content {
   flex-grow: 1;
+}
+
+@media screen and (min-width: 765px) {
+	.container {
+    border-right: 1px solid #c9c9c9;
+    border-left: 1px solid #c9c9c9;
+    // -webkit-box-shadow: -10px 0px 13px -7px #b9b9b9, 10px 0px 13px -7px #b9b9b9, 0px 0px 0px 0px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #b9b9b9, 10px 0px 13px -7px #b9b9b9, 0px 0px 0px;
+	}
 }

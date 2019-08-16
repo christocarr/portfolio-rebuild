@@ -21,17 +21,17 @@ time, mark, audio, video {
 }
 
 h1 {
-	font-size: 2.5rem;
-	padding: 0 1rem 0 1rem;
+	font-size: 2rem;
+	padding: 1rem 1rem 0 1rem;
 }
 
 h2 {
-	font-size: 1.9rem;
+	font-size: 1.5rem;
 	padding: 0 1rem 0 1rem;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 	margin: 2rem 0 1rem 0;
 	padding: 0 1rem 0 1rem;
 }
@@ -56,4 +56,24 @@ p {
 	}
 }
 
+@media screen and (min-width: 765px) {
+	html {
+		font-size: 18px;
+	}
 
+	h1 {
+		padding: 1rem 1.5rem 0 1.5rem;
+	}
+	
+	h2 {
+		padding: 0 1.5rem 0 1.5rem;
+	}
+	
+	h3 {
+		padding: 0 1.5rem 0 1.5rem;
+	}
+	
+	p {
+		padding: 0 1.5rem 0 1.5rem;
+	}
+}

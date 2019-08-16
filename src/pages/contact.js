@@ -9,14 +9,11 @@ const Contact = () => {
     <Layout>
       <Head title="Contact "/>
       <h2>Contact Page</h2>
-      <p>What is a website without a contact form?</p>
-      <p>Reach out to me on twitter <a href="https://twitter.com/ChrisofCarr">@ChrisofCarr</a></p>
-      <p>Connect with me on <a href="https://www.linkedin.com/in/chris-carr-93288820">LinkedIn</a></p>
-      <p>My repos on <a href="https://github.com/christocarr">GitHub</a></p>
-      <div className="iconContainer">
-        <FaGithubSquare className="icon" />
-        <FaLinkedin className="icon" />
-        <FaTwitterSquare className="icon"/>
+      <p>What is a website without a contact form? </p>
+      <div className="icon-container">
+      <a href="https://github.com/christocarr"><FaGithubSquare className="icon" /></a>
+        <a href="https://www.linkedin.com/in/chris-carr-93288820"> <FaLinkedin className="icon" /></a>
+        <a href="https://twitter.com/ChrisofCarr"><FaTwitterSquare className="icon"/></a>
       </div>
     </Layout>
   )

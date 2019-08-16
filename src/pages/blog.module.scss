@@ -5,6 +5,10 @@
 
 .post {
   margin: 1em 0;
+
+  a {
+    padding: 1rem;
+  }
   
   a:hover {
     color: #6e6e6e;
@@ -13,4 +17,12 @@
 
 .date {
   margin: 0 0 0.5rem 0;
+}
+
+@media screen and (min-width: 765px) {
+  .post {
+    a {
+		  padding: 0 1.5rem 0 1.5rem;
+    }
+  }
 }

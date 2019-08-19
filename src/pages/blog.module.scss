@@ -25,4 +25,12 @@
 		  padding: 0 1.5rem 0 1.5rem;
     }
   }
+} 
+
+@media screen and (min-width: 1025px) {
+  .post {
+	  a {
+		  padding: 0 2.5rem 0 2.5rem;
+    }
+  }
 }

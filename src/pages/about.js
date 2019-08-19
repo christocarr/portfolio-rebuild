@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
@@ -17,12 +16,6 @@ const About = () => {
       <p>Right now I develop with React and the JAMStack(a fullstack of sorts) and in the long term, if not already, I plan to become a fullstack developer. I'm open minded to
       learning new tech to keep myself open to job opportunities.</p>
       <p>When I need to take a break from coding I like to</p>
-      <p>Reach out to me on the following social media platforms:</p>
-      <div className="icon-container">
-      <a href="https://github.com/christocarr"><FaGithubSquare className="icon" /></a>
-        <a href="https://www.linkedin.com/in/chris-carr-93288820"> <FaLinkedin className="icon" /></a>
-        <a href="https://twitter.com/ChrisofCarr"><FaTwitterSquare className="icon"/></a>
-      </div>
     </Layout>
 
   )

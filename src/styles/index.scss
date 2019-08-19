@@ -42,6 +42,16 @@ p {
 	padding: 0 1rem 0 1rem;
 }
 
+.photo-credit{
+	margin: 0.5rem 0 2rem 0;
+	font-weight: bold;
+	float: right;
+}
+
+div {
+	clear: both;
+}
+
 .icon-container {
 	display: flex;
 	justify-content: space-around;

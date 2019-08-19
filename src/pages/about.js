@@ -16,6 +16,7 @@ const About = () => {
       <p>That’s when I looked further into web development as I frustratingly enjoyed(laying out a site with CSS is tremendously frustrating for a beginner) building my photography website a few years before. I then took part in Udacity's Google Developer Challenge Scholarship which I completed and then received and successfully completed a full six month Google Developer Nanodegree Scholarship. Since I have not looked back and enjoy every minute.</p>
       <p>Right now I develop with React and the JAMStack(a fullstack of sorts) and in the long term, if not already, I plan to become a fullstack developer. I'm open minded to
       learning new tech to keep myself open to job opportunities.</p>
+      <p>When I need to take a break from coding I like to</p>
       <p>Reach out to me on the following social media platforms:</p>
       <div className="icon-container">
       <a href="https://github.com/christocarr"><FaGithubSquare className="icon" /></a>

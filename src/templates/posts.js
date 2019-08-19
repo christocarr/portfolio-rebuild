@@ -18,7 +18,7 @@ export const query = graphql`
         credit
         image {
           childImageSharp {
-            fluid {
+            fluid (maxWidth: 1024) {
               ...GatsbyImageSharpFluid
             }
           }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Form from '../components/form'
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
 
 import Layout from '../components/layout'
@@ -8,8 +9,8 @@ const Contact = () => {
   return (
     <Layout>
       <Head title="Contact "/>
-      <h2>Contact Page</h2>
-      <p>What is a website without a contact form? </p>
+      <h2>Get in touch</h2>
+      <Form />
       <div className="icon-container">
       <a href="https://github.com/christocarr"><FaGithubSquare className="icon" /></a>
         <a href="https://www.linkedin.com/in/chris-carr-93288820"> <FaLinkedin className="icon" /></a>

@@ -16,7 +16,10 @@ const Head = ({ title }) => {
   `)
 
   return (
-    <Helmet title={ `${title} | ${data.site.siteMetadata.author}` } />
+    <Helmet>
+      <title>{ `${title} | ${data.site.siteMetadata.author}` }</title>
+      <link rel="canonical" href="https://…"/>
+    </Helmet>
   )
 }
 

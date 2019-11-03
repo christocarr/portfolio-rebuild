@@ -7,6 +7,18 @@
   align-items: center;
 }
 
+.title-container {
+  position: relative;
+  p {
+    position: absolute;
+    bottom: -0.7rem;
+    right: 0.5rem;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+  }
+}
+
 .title {
   color: var(--primary-color);
   font-size: 2rem;

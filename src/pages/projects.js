@@ -8,7 +8,8 @@ const Projects = () => {
     <Layout>
       <Head title="Projects" />
       <h2>Projects</h2>
-      <p>Future projects will appear here.</p>
+      <p>Future projects will appear on this page.</p>
+      <p>Past projects <a href="https://iamchriscarr.com/projects.html">here</a> on my old website.</p>
     </Layout>
   )
 }

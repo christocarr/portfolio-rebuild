@@ -44,11 +44,15 @@ h2 {
 	padding: 0 1rem 0 1rem;
 }
 
-h3 {
+h3, h4 {
 	color: var(--main-text-color);
   font-size: 1.2rem;
 	margin: 2rem 0 1rem 0;
 	padding: 0 1rem 0 1rem;
+}
+
+h4 {
+	font-size: 1rem;
 }
 
 p {
@@ -96,17 +100,10 @@ iframe {
 		padding: 1.5rem 3rem 0 3rem;
 	}
 	
-	h2 {
+	h2, h3, h4, p {
 		padding: 0 3rem 0 3rem;
 	}
-	
-	h3 {
-		padding: 0 3rem 0 3rem;
-	}
-	
-	p {
-		padding: 0 3rem 0 3rem;
-	}
+
 }
 
 @media screen and (min-width: 1025px) {
@@ -114,15 +111,7 @@ iframe {
 		padding: 2.5rem 2.5rem 0 2.5rem;
 	}
 	
-	h2 {
-		padding: 0 3.5rem 0 3.5rem;
-	}
-	
-	h3 {
-		padding: 0 3.5rem 0 3.5rem;
-	}
-	
-	p {
+	h2, h3, h4, p {
 		padding: 0 3.5rem 0 3.5rem;
 	}
 	

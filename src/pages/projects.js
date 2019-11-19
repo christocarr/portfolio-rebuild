@@ -18,7 +18,7 @@ export default ({ data }) => (
     <h4>The Solution</h4>
     <p>A responsive React web app that pulls in the spreadsheet data and allows the user to search for activities within an area of the patient's postcode.</p>
     <div className={ProjectStyles.imgContainer}>
-      <Img fixed={data.file.childImageSharp.fixed} alt="sibi activity search" />
+      <Img fluid={data.file.childImageSharp.fluid} alt="sibi activity search" />
       <p>Visit the project <a href="https://activity-search.netlify.com/">here</a></p>
     </div>
     <p>More projects <a href="https://iamchriscarr.com/projects.html">here</a> on my old website.</p>
@@ -27,10 +27,10 @@ export default ({ data }) => (
 
 export const query  = graphql `
   query {
-    file(relativePath: { eq:"images/sibi-search.jpg" }) {
+    file(relativePath: { eq:"images/sibi-search.png" }) {
       childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

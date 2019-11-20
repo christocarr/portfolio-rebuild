@@ -15,24 +15,24 @@ const Header = () => {
       </div>
       <nav className={headerStyles.navList}>
         <li>
-          <Link to="about" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
+          <Link to="/about" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
             About
           </Link>
         </li>
         <li>
-          <Link to="projects" className={headerStyles.navItem}
+          <Link to="/projects" className={headerStyles.navItem}
           activeClassName={headerStyles.activeNavItem}>
             Projects
           </Link>
         </li>
         <li>
-          <Link to="contact" className={headerStyles.navItem}
+          <Link to="/contact" className={headerStyles.navItem}
           activeClassName={headerStyles.activeNavItem}>
             Contact
           </Link>
         </li>
         <li>
-          <Link to="blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
+          <Link to="/blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
             Blog
           </Link>
         </li>

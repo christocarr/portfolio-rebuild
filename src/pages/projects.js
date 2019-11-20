@@ -29,7 +29,7 @@ export const query  = graphql `
   query {
     file(relativePath: { eq:"images/sibi-search.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 200){
           ...GatsbyImageSharpFluid
         }
       }

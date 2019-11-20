@@ -1,14 +1,8 @@
 .img-container {
+  width: 90%;
   margin: 0 auto 2rem auto;
-  // width: 90%;
-  img {
-    margin: 1rem auto 0;
-    width: 90%;
-  }
+  padding: 1rem;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(51, 50, 50, 0.5);
+-moz-box-shadow:    2px 2px 4px 0px rgba(51, 50, 50, 0.5);
+box-shadow:         2px 2px 4px 0px rgba(51, 50, 50, 0.5);
 }
-
-@media screen and (min-width: 765px) {
-  .img-container {
-    // width: 60%;
-  }
-} 

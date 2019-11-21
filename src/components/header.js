@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import  HeadRoom from 'react-headroom'
 
 import headerStyles from './header.module.scss'
 
 const Header = () => {
 
   return (
+    
     <header className={headerStyles.header}>
       <div className={headerStyles.titleContainer}>
         <h1>
@@ -13,6 +15,7 @@ const Header = () => {
         </h1>
         <p>Web Developer</p>
       </div>
+      <HeadRoom>
       <nav className={headerStyles.navList}>
         <li>
           <Link to="/about" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
@@ -37,7 +40,9 @@ const Header = () => {
           </Link>
         </li>
       </nav>
+      </HeadRoom>
     </header>
+    
   )
 }
 

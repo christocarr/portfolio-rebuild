@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import  HeadRoom from 'react-headroom'
-
+import Animate from 'animate.css-react'
 import headerStyles from './header.module.scss'
 
 const Header = () => {
@@ -13,7 +13,9 @@ const Header = () => {
         <h1>
           <Link to="/" className={headerStyles.title}>Christopher Carr</Link>
         </h1>
-        <p>Web Developer</p>
+        <Animate>
+          <p>Web Developer</p>
+        </Animate>
       </div>
       <HeadRoom>
       <nav className={headerStyles.navList}>

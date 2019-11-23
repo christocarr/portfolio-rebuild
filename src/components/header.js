@@ -13,7 +13,7 @@ const Header = () => {
         <h1>
           <Link to="/" className={headerStyles.title}>Christopher Carr</Link>
         </h1>
-        <Fade right cascade>
+        <Fade right>
           <p>Web Developer</p>
         </Fade>
       </div>

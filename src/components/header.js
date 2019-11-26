@@ -29,19 +29,17 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to="/projects" className={headerStyles.navItem}
-          activeClassName={headerStyles.activeNavItem}>
+          <Link to="/projects" getProps={isActive}>
             Projects
           </Link>
         </li>
         <li>
-          <Link to="/contact" className={headerStyles.navItem}
-          activeClassName={headerStyles.activeNavItem}>
+          <Link to="/contact" getProps={isActive}>
             Contact
           </Link>
         </li>
         <li>
-          <Link to="/blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
+          <Link to="/blog" getProps={isActive}>
             Blog
           </Link>
         </li>

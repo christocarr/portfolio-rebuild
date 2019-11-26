@@ -96,6 +96,16 @@ iframe {
 	margin-bottom: 2rem;
 }
 
+.active {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+.inactive {
+	color: var(--main-text-color);
+	text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
 	html {
 		font-size: 16px;

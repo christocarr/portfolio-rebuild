@@ -6,6 +6,10 @@ import headerStyles from './header.module.scss'
 
 const Header = () => {
 
+  const isActive = ({ isCurrent }) => {
+    return isCurrent ? { className: "active" } : { className: "inactive" }
+  }
+
   return (
     
     <header className={headerStyles.header}>
@@ -20,7 +24,7 @@ const Header = () => {
       <HeadRoom>
       <nav className={headerStyles.navList}>
         <li>
-          <Link to="/about" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
+          <Link to="/about" getProps={isActive}>
             About
           </Link>
         </li>

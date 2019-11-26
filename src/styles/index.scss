@@ -4,6 +4,7 @@
 	--secondary-color: #3385D6;
 	--accent-color: white;
 	--main-text-color: #3a3a3a;
+	--inactive-color: #757575;
 	--background-color: #f0f0f0;
 }
 
@@ -102,7 +103,7 @@ iframe {
 }
 
 .inactive {
-	color: var(--main-text-color);
+	color: var(--inactive-color);
 	text-decoration: none;
 	transition: color 0.3s ease-in-out;
 }

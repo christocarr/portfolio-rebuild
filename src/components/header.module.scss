@@ -48,23 +48,9 @@
   font-weight: bold;
   li {
     margin-bottom: 0;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
   }
-}
-
-.nav-item {
-  font-size: 0.9rem;
-  padding: 0.4rem 0.8rem;
-  text-decoration: none;
-  color: var(--main-text-color);
-  transition: color 0.3s ease-in-out;
-}
-
-.nav-item:hover {
-  color: var(--primary-color);
-}
-
-.active-nav-item {
-  color: var(--primary-color);
 }
 
 @media screen and (min-width: 768px) {

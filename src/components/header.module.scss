@@ -50,7 +50,7 @@
     margin-bottom: 0;
     font-size: 0.9rem;
     padding: 0.4rem 0.8rem;
-    margin-right: 2rem;
+    margin-right: 0.7rem;
   }
   li:last-child {
     margin-right: 0;
@@ -68,10 +68,10 @@
   }
   .nav-list {
     height: 3rem;
-  }
-  .nav-item {
-    font-size: 1rem;
-    padding: 0.4rem 1.2rem;
+    li {
+      font-size: 1rem;
+      padding: 0.4rem 1.2rem;
+    }
   }
 }
 

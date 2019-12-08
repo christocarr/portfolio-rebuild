@@ -21,7 +21,6 @@ export default ({ data }) => (
       <Img fluid={data.file.childImageSharp.fluid} alt="sibi activity search" />
       <p>Visit the project <a href="https://activity-search.netlify.com/">here</a></p>
     </div>
-    <p>Thats all for now but I have more projects over on my old <a href="https://iamchriscarr.com/projects.html">website</a></p>
   </Layout>
 )
 

@@ -35,7 +35,9 @@ const Post = (props) => {
       <Head title={postData.title} />
       <h2>{postData.title}</h2>
       <p>{postData.date}</p>
-      <Img fluid={postData.image.childImageSharp.fluid} alt={postData.alt} />
+      <div className="img-container">
+        <Img fluid={postData.image.childImageSharp.fluid} alt={postData.alt} />
+      </div>
       <p className="photo-credit">{postData.credit}</p>
       <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
       </div>

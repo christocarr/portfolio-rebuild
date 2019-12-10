@@ -23,26 +23,28 @@ const Header = () => {
       </div>
       <HeadRoom>
       <nav className={headerStyles.navList}>
-        <li>
-          <Link to="/about" getProps={isActive}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="/projects" getProps={isActive}>
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact" getProps={isActive}>
-            Contact
-          </Link>
-        </li>
-        <li>
-          <Link to="/blog" getProps={isActive}>
-            Blog
-          </Link>
-        </li>
+        <ul>
+          <li>
+            <Link to="/about" getProps={isActive}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/projects" getProps={isActive}>
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" getProps={isActive}>
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link to="/blog" getProps={isActive}>
+              Blog
+            </Link>
+          </li>
+        </ul>
       </nav>
       </HeadRoom>
     </header>

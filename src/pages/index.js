@@ -10,7 +10,8 @@ const Index = () => {
       <Head title="Home"/>
       <h2>Welcome!</h2>
       <h3>I'm Chris, a web developer living in London.</h3>
-      <p>Need me to build your next website or app? I'm currently looking for a role as a frontend developer.</p>
+      <p>Need me to build your next website or app?</p>
+      <p>I'm currently looking for a role as a frontend developer.</p>
       <p><Link to="contact">Contact me</Link></p>
     </Layout>
 

@@ -23,6 +23,20 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: `${__dirname}/src/blog-posts`,
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'projects',
+        path: `${__dirname}/src/projects`,
+      }
+    },
+    {
       resolve: `gatsby-plugin-disqus`,
       options: {
         shortname: `blog-cffsqoruvg`

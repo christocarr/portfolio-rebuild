@@ -9,7 +9,10 @@ const Blog = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { frontmatter: {posttype: { eq: "blog" } } }
+      ) {
         edges {
           node {
             excerpt

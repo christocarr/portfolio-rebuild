@@ -1,42 +1,51 @@
 import React from 'react'
-
+import { Link, graphql, useStaticQuery } from 'gatsby'
+import projectStyles from './project.module.scss'
 import Layout from '../components/layout'
 import Head from '../components/head'
-import ProjectStyles from './project.module.scss'
-import Img from 'gatsby-image'
-import { graphql } from 'gatsby'
 
-export default ({ data }) => (
-  <Layout>
-    <Head title="Projects" />
-    <h2>Projects</h2>
-    <div className="project-container">
-      <h3>SIBI Activity Search</h3>
-      <h4>The Problem</h4>
-      <p>CVS Brent, an organization that provides community support, has a spreadsheet with over 1600 records they were using in their Social Isolation in Brent Initiative (SIBI). 
-        The initiative allows health care professionals help people that are isolated due to health problems, find social activities they might be interested in.
-        Searching for a particular activity on a spreadsheet that contains 1600 entries is a tiresome process.</p>
-      <h4>The Solution</h4>
-      <p>A responsive React web app that pulls in the spreadsheet data and allows the user to search for activities within an area of the patient's postcode.</p>
-      <div className={ProjectStyles.imgContainer}>
-        <Img fluid={data.file.childImageSharp.fluid} alt="sibi activity search" />
-        <p>Visit the project <a href="https://activity-search.netlify.com/">here</a></p>
-      </div>
-    </div>
-    <div className="project-container">
-      <h3>SIBI Activity Search</h3>
-    </div>
-  </Layout>
-)
+const Projects = () => {
 
-export const query  = graphql `
-  query {
-    file(relativePath: { eq:"images/sibi_search.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800){
-          ...GatsbyImageSharpFluid
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(
+        filter: {
+          frontmatter: {posttype: {eq: "project"}}
+        }
+      ) {
+        edges {
+          node {
+            excerpt
+            frontmatter {
+              title
+            }
+            id
+            fields {
+              slug
+            }
+          }
         }
       }
     }
-  }
-`
+  `)
+
+  return (
+    <Layout>
+      <Head title="Projects" />
+      <h2>Projects</h2>
+      <ol >
+        {data.allMarkdownRemark.edges.map((edge) => {
+          return (
+            <li key={edge.node.id} >
+              <h3>{edge.node.frontmatter.title}</h3>
+              <p>{edge.node.excerpt}</p>
+              <Link to={`/projects/${edge.node.fields.slug}`}>read more</Link>
+            </li>
+          )
+        })}
+      </ol>
+    </Layout>
+  )
+}
+
+export default Projects

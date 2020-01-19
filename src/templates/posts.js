@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Disqus from 'gatsby-plugin-disqus'
-
 import Layout from '../components/layout'
 import Head from '../components/head'
 

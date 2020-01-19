@@ -46,11 +46,10 @@ const Projects = () => {
           return (
             <li className={projectStyles.projectPost} key={edge.node.id} >
               <h3>{edge.node.frontmatter.title}</h3>
-              <p>{edge.node.excerpt}</p>
               <div className={projectStyles.imgContainer}>
                <Img fluid={edge.node.frontmatter.image.childImageSharp.fluid} alt={edge.alt} />
               </div>
-              <Link to={`/projects/${edge.node.fields.slug}`}>read more</Link>
+              <Link to={`/projects/${edge.node.fields.slug}`}>more...</Link>
             </li>
           )
         })}

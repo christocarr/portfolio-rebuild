@@ -1,0 +1,36 @@
+.project-posts {
+  list-style-type: none;
+  margin: 0;
+}
+
+.project-post {
+  margin: 1em 0;
+
+  a {
+    padding: 1rem;
+  }
+  
+  a:hover {
+    color: #6e6e6e;
+  }
+}
+
+.img-container {
+  margin: 0 1rem;
+}
+
+@media screen and (min-width: 765px) {
+  .post {
+    a {
+		  padding: 0 3rem 0 3rem;
+    }
+  }
+} 
+
+@media screen and (min-width: 1025px) {
+  .post {
+	  a {
+		  padding: 0 3.5rem 0 3.5rem;
+    }
+  }
+}

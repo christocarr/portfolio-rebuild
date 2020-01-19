@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import projectStyles from './project.module.scss'
+import projectStyles from './projects.module.scss'
 import Layout from '../components/layout'
 import Head from '../components/head'
 import Img from 'gatsby-image'
@@ -41,13 +41,13 @@ const Projects = () => {
     <Layout>
       <Head title="Projects" />
       <h2>Projects</h2>
-      <ol >
+      <ol className={projectStyles.projectPosts}>
         {data.allMarkdownRemark.edges.map((edge) => {
           return (
-            <li key={edge.node.id} >
+            <li className={projectStyles.projectPost} key={edge.node.id} >
               <h3>{edge.node.frontmatter.title}</h3>
               <p>{edge.node.excerpt}</p>
-              <div>
+              <div className={projectStyles.imgContainer}>
                <Img fluid={edge.node.frontmatter.image.childImageSharp.fluid} alt={edge.alt} />
               </div>
               <Link to={`/projects/${edge.node.fields.slug}`}>read more</Link>

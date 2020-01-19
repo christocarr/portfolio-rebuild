@@ -4,6 +4,8 @@ path: "/sibi-activity-search"
 title: "SIBI Activity Search"
 image: "./sibi_search.png"
 alt: "sibi activity search website"
+githublink: "https://github.com/christocarr/sibi-activity-search-v3"
+websitelink: "https://activity-search.netlify.com/"
 ---
 
 ### The problem
@@ -13,3 +15,7 @@ CVS Brent, an organization that provides community support, has a spreadsheet wi
 ### The Solution
 
 A responsive React web app that pulls in the spreadsheet data and allows the user to search for activities within an area of the patient's postcode.
+
+<!-- [Github repo](https://github.com/christocarr/sibi-activity-search-v3)
+
+[Website](https://activity-search.netlify.com/) -->

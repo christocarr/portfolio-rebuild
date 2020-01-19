@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import projectStyles from './project.module.scss'
 import Layout from '../components/layout'
 import Head from '../components/head'
+import Img from 'gatsby-image'
 
 const Projects = () => {
 
@@ -18,6 +19,13 @@ const Projects = () => {
             excerpt
             frontmatter {
               title
+              image {
+                childImageSharp {
+                  fluid (maxWidth: 1024) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
             id
             fields {
@@ -39,6 +47,9 @@ const Projects = () => {
             <li key={edge.node.id} >
               <h3>{edge.node.frontmatter.title}</h3>
               <p>{edge.node.excerpt}</p>
+              <div>
+               <Img fluid={edge.node.frontmatter.image.childImageSharp.fluid} alt={edge.alt} />
+              </div>
               <Link to={`/projects/${edge.node.fields.slug}`}>read more</Link>
             </li>
           )

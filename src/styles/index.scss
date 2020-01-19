@@ -116,6 +116,19 @@ iframe {
 	color: var(--primary-color);
 }
 
+.project-img-container {
+	margin: 0 1rem;
+}
+
+.link-container {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 1rem;
+	a:hover{
+		color: #6e6e6e;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	html {
 		font-size: 16px;

@@ -12,8 +12,9 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date
         alt
+        githublink
+        websitelink
         image {
           childImageSharp {
             fluid (maxWidth: 1024) {
@@ -35,8 +36,12 @@ const Post = (props) => {
       <p>{postData.date}</p>
       <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}>
       </div>
-      <div>
+      <div className="project-img-container">
         <Img fluid={postData.image.childImageSharp.fluid} alt={postData.alt} />
+        <div className="link-container">
+          <a href={postData.githublink}>Github repo</a>
+          <a href={postData.websitelink}>Website</a>
+        </div>
       </div>
     </Layout>
   )

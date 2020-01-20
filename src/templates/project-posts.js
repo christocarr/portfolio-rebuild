@@ -1,7 +1,6 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
-
 import Layout from '../components/layout'
 import Head from '../components/head'
 
@@ -41,6 +40,9 @@ const Post = (props) => {
         <div className="link-container">
           <a href={postData.githublink}>Github repo</a>
           <a href={postData.websitelink}>Website</a>
+        </div>
+        <div className="link-container">
+          <Link className="to-project-list" to="/projects">Back to projects</Link>
         </div>
       </div>
     </Layout>

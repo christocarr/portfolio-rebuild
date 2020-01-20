@@ -49,7 +49,7 @@ const Projects = () => {
               <div className={projectStyles.imgContainer}>
                <Img fluid={edge.node.frontmatter.image.childImageSharp.fluid} alt={edge.alt} />
               </div>
-              <Link to={`/projects/${edge.node.fields.slug}`}>more...</Link>
+              <Link className={projectStyles.projectPostLink} to={`/projects/${edge.node.fields.slug}`}>more...</Link>
             </li>
           )
         })}

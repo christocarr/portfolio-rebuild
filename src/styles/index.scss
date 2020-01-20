@@ -127,6 +127,10 @@ iframe {
 	a:hover{
 		color: #6e6e6e;
 	}
+	.to-project-list {
+		margin-top: 2rem;
+		justify-self: flex-start;
+	}
 }
 
 @media screen and (min-width: 768px) {

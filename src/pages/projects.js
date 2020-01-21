@@ -16,9 +16,9 @@ const Projects = () => {
       ) {
         edges {
           node {
-            excerpt
             frontmatter {
               title
+              projectnumber
               image {
                 childImageSharp {
                   fluid (maxWidth: 1024) {
@@ -41,15 +41,15 @@ const Projects = () => {
     <Layout>
       <Head title="Projects" />
       <h2>Projects</h2>
-      <ol className={projectStyles.projectPosts}>
+      <ol className="container">
         {data.allMarkdownRemark.edges.map((edge) => {
           return (
-            <li className={projectStyles.projectPost} key={edge.node.id} >
-              <h3>{edge.node.frontmatter.title}</h3>
-              <div className={projectStyles.imgContainer}>
-               <Img fluid={edge.node.frontmatter.image.childImageSharp.fluid} alt={edge.alt} />
-              </div>
-              <Link className={projectStyles.projectPostLink} to={`/projects/${edge.node.fields.slug}`}>more...</Link>
+            <li key={edge.node.id} >
+              <Link className={`project ${edge.node.frontmatter.projectnumber}`} to={`/projects/${edge.node.fields.slug}`}>
+                <div className="textContent">
+                  <p>{edge.node.frontmatter.title}</p>
+                </div>
+              </Link>
             </li>
           )
         })}

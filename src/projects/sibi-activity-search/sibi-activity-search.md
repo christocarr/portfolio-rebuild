@@ -3,9 +3,11 @@ posttype: "project"
 path: "/sibi-activity-search"
 title: "SIBI Activity Search"
 image: "./sibi_search.png"
+placeholder: "./sibi-logo310x310-placeholder.jpg"
 alt: "sibi activity search website"
 githublink: "https://github.com/christocarr/sibi-activity-search-v3"
 websitelink: "https://activity-search.netlify.com/"
+projectnumber: one
 ---
 
 ### The problem

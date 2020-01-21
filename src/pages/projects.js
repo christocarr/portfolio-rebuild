@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/layout'
 import Head from '../components/head'
+import BackgroundImage from 'gatsby-background-image'
 
 const Projects = () => {
 
@@ -19,7 +20,7 @@ const Projects = () => {
               projectnumber
               image {
                 childImageSharp {
-                  fluid (maxWidth: 1024) {
+                  fluid (maxWidth: 300) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -43,11 +44,15 @@ const Projects = () => {
         {data.allMarkdownRemark.edges.map((edge) => {
           return (
             <li key={edge.node.id} >
-              <Link className={`project ${edge.node.frontmatter.projectnumber}`} to={`/projects/${edge.node.fields.slug}`}>
-                <div className="text-content">
-                  <p>{edge.node.frontmatter.title}</p>
-                </div>
-              </Link>
+              <BackgroundImage
+                fluid={edge.node.frontmatter.image.childImageSharp.fluid}
+              >
+                <Link className="project" to={`/projects/${edge.node.fields.slug}`}>
+                  <div className="text-content">
+                    <p>{edge.node.frontmatter.title}</p>
+                  </div>
+                </Link>
+              </BackgroundImage>
             </li>
           )
         })}

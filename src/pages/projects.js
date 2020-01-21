@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import projectStyles from './projects.module.scss'
 import Layout from '../components/layout'
 import Head from '../components/head'
-import Img from 'gatsby-image'
 
 const Projects = () => {
 
@@ -46,7 +44,7 @@ const Projects = () => {
           return (
             <li key={edge.node.id} >
               <Link className={`project ${edge.node.frontmatter.projectnumber}`} to={`/projects/${edge.node.fields.slug}`}>
-                <div className="textContent">
+                <div className="text-content">
                   <p>{edge.node.frontmatter.title}</p>
                 </div>
               </Link>

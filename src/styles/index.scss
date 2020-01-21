@@ -133,6 +133,42 @@ iframe {
 	}
 }
 
+/*----Project Page Syles-----*/
+.project {
+	background-color: #888;
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+
+.one {
+	background-image: url("../projects/sibi-activity-search/sibi-logo-310x310-placeholder.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.two {
+	background-image: url("../projects/space-tours/space-tours-placeholder.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.text-content {
+	width: 300px;
+	height: 300px;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: 0.2s;
+	p {
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+
 @media screen and (min-width: 768px) {
 	html {
 		font-size: 16px;

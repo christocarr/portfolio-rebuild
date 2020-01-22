@@ -17,7 +17,6 @@ const Projects = () => {
           node {
             frontmatter {
               title
-              projectnumber
               image {
                 childImageSharp {
                   fluid (maxWidth: 300) {

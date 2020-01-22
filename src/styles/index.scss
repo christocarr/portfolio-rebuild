@@ -142,6 +142,10 @@ iframe {
 	justify-content: center;
 	align-items: center;
 	list-style: none;
+	margin-top: 1rem;
+	li {
+		margin-bottom: 1rem;
+	}
 }
 
 .project {
@@ -192,6 +196,10 @@ iframe {
 	}
 	.img-container {
 		padding: 0 3rem 0 3rem;
+	}
+	.container {
+		flex-direction: row;
+		justify-content: space-evenly;
 	}
 
 }

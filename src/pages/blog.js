@@ -15,7 +15,7 @@ const Blog = () => {
       ) {
         edges {
           node {
-            excerpt
+            excerpt(pruneLength: 400)
             frontmatter {
               title
               date

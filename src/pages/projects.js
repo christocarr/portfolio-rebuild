@@ -19,7 +19,7 @@ const Projects = () => {
               title
               image {
                 childImageSharp {
-                  fluid (maxWidth: 300) {
+                  fluid (quality: 100, maxWidth: 720) {
                     ...GatsbyImageSharpFluid
                   }
                 }

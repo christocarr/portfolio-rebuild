@@ -41,9 +41,9 @@ const Post = (props) => {
           <a href={postData.githublink}>Github repo</a>
           <a href={postData.websitelink}>Website</a>
         </div>
-        <div className="link-container">
-          <Link className="to-project-list" to="/projects">Back to projects</Link>
-        </div>
+      </div>
+      <div className="link-container">
+        <Link className="to-project-list" to="/projects">Back to projects</Link>
       </div>
     </Layout>
   )

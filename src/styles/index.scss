@@ -141,7 +141,7 @@ iframe {
 	align-items: center;
 	list-style: none;
 	margin: 1rem 1rem 0 1rem;
-	background-color: #f3f9fc;
+	background-color: var(--background-color);
 	padding: 2rem 1rem;
 	li {
 		margin-bottom: 2rem;

@@ -1,11 +1,17 @@
+.form-container {
+  margin: 0 1rem;
+  background-color: var(--background-color);
+}
+
 form {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
   align-items: center;
-  margin: 1rem auto 2rem;
+  margin: auto;
   input, textarea {
+    width: 80%;
     padding: 0.2rem;
   }
   input, label, textarea {

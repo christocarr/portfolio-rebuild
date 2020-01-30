@@ -205,9 +205,13 @@ iframe {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
+		align-items: center;
 		margin: 1rem 3rem;
 		li {
 			margin-bottom: 2rem;
+			&:last-of-type {
+				margin-bottom: 2rem;
+			}
 		}
 	}
 	.project-img-container {

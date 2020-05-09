@@ -13,7 +13,8 @@ const About = () => {
       <h3>The Long</h3>
       <p>I looked into web development as career when I built my photography website by teaching myself the basics of HTML and CSS. To find out if I still enjoyed building things for the web, I took part in Udacity's Google Developer Challenge Scholarship which I completed and then received and successfully completed a full six month Google Developer Nanodegree Scholarship. 
         Since I have not looked back and enjoy every minute.</p>
-      <p>During the day I work as a compliance coordinator and in my spare time I create and build websites and apps and working on university curriculum. Right now I enjoy developing using React and the JAMStack(a fullstack of sorts) and in the long term, if not already, I plan to become a fullstack developer. I'm open minded to
+      <p>While not working full-time as a compliance coordinator, I work on personal frontend projects and busy with IT and Computing at the Open University.
+      Right now I enjoy developing using React and the JAMStack(a fullstack of sorts) and in the long term, if not already, I plan to become a fullstack developer. I'm open minded to
       learning new tech to keep myself open to job opportunities.</p>
     </Layout>
 

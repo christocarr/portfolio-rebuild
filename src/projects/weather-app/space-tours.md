@@ -1,11 +1,11 @@
 ---
 posttype: "project"
-path: "/space-tours"
-title: "Space Tours"
-image: "./space-tours.png"
-alt: "space tours website"
-githublink: "https://github.com/christocarr/space-tours"
-websitelink: "https://space-tours.netlify.com/"
+path: "/weather-app"
+title: "Weather App"
+image: "./weather-app.png"
+alt: "weather app"
+githublink: "https://github.com/christocarr/weather-app"
+websitelink: "http://http://178.62.108.238/"
 ---
 
-A fictional space travel agency website built using Gatsby.js.
+A weather app that asks the user for their city and outputs the current weather for that city.

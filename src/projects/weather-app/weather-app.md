@@ -8,4 +8,4 @@ githublink: "https://github.com/christocarr/weather-app"
 websitelink: "http://http://178.62.108.238/"
 ---
 
-A weather app that asks the user for their city and outputs the current weather for that city.
+A weather app that uses the openweathermap.org api. It fetches the user's location and sends the location's lat lon coordinates to the server as a request for weather data. The project is hosted on Digital Ocean.
